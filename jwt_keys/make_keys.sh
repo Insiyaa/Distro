@@ -1,1 +1,2 @@
-ssh-keygen -f ./key -t ecdsa -b 521 -q -N ""
+#!/usr/bin/env bash
+openssl req -subj '/CN=www.mydom.com/O=My Company Name LTD./C=US' -x509 -nodes -newkey rsa:2048 -keyout key -out key.pub
