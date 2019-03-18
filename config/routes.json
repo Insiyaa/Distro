@@ -49,7 +49,7 @@
       "Slide":{
         "_resolver":{
           "destination":"?DeepZoom={OUT}",
-          "url": "https://vinculum.bmi.stonybrookmedicine.edu/node/{IN}?_format=json",
+          "url": "http://ca-pathdb/node/{IN}?_format=json",
           "field":"field_iip_path[0].value",
           "before":["_files", ".dzi"]
         }
@@ -69,7 +69,7 @@
     },
     "pathdb":{
       "_public": "true",
-      "_base": "http://ca-path/",
+      "_base": "http://ca-pathdb/",
       "slide":{
         "info":"/node/",
         "unmod":""
