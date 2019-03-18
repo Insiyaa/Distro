@@ -1,12 +1,8 @@
 {
   "root":"http://ca-front:80/",
   "_root_public": "true",
-  "auth":{
-    "permissions_field":"attrs"
-  },
   "services":{
     "data":{
-      "_public": "true",
       "_base": "http://ca-data:9099/services/caMicroscope",
       "Mark": {
         "get":"/Mark/query/get",
@@ -45,6 +41,7 @@
       }
     },
     "img": {
+      "_public": "true",
       "_base":"http://ca-iip/fcgi-bin/iipsrv.fcgi",
       "IIP": {
         "raw":""
@@ -72,7 +69,7 @@
     },
     "pathdb":{
       "_public": "true",
-      "_base": "https://vinculum.bmi.stonybrookmedicine.edu/",
+      "_base": "http://ca-path/",
       "slide":{
         "info":"/node/",
         "unmod":""
